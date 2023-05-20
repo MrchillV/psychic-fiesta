@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="milestone" content="Foster-Pet">
+    <script src="https://tinyurl.com/2p9w5adj"></script>
+    <title>Foster A Pet</title>
+    <link href="style.css" rel="stylesheet"  type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sign Up to Foster a Pet</h1>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4">Available Pets</th>
+          </tr>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Breed</th>
+            <th scope="col">Picture</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Benny</td>
+            <td>2</td>
+            <td>Golden Retriever</td>
+            <td><img src="https://eagleridgegoldens.breedpost.com/site/assets/files/33034/mulan.1000x1000.jpg" alt="Two year medium sized old Golden Retrienver with Golden fur and thick undercoat" width="150" height="150"></td>
+            <!-- I added a picture of a Two year old Golden Retriever to provide a visualization of the dog and also provide a description that provides more accessibility -->
+          </tr>
+          <tr>
+            <td>Felix</td>
+            <td>5</td>
+            <td>Orange Tabby</td>
+            <td><img src="https://bloximages.newyork1.vip.townnews.com/lancasteronline.com/content/tncms/assets/v3/editorial/6/af/6af4762e-563d-11e9-b00f-fb61df4bb913/5ca4f9dbdfb21.image.jpg?resize=541%2C500" alt=" Five year old small sized Orange Tabby with stripes of white with a medium orange color" width="150"></td>
+          </tr>
+          <tr>
+            <td>Cooper</td>
+            <td>8</td>
+            <td>German Shepherd</td>
+            <td><img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/62781565/1/?bust=1681746992" alt="Eight year old large sized German Shepherd with a thick dark and cream undercoat" width="150"></td>
+          </tr>
+          <tr>
+            <td>Anna</td>
+            <td>3</td>
+            <td>Long-Haired Dachshund</td>
+            <td><img src="https://puptraveller.com/wp-content/uploads/2021/12/Screen-Shot-2021-12-30-at-4.03.38-pm.jpg" alt="Three year old small sized Long-Haired Dachshund with a long brown coat with short legs" width="150"</td>
+          </tr>
+        </tbody>
+      </table>
+      <img src="assets/dog.png" alt="Cute Dog Looking Over Form" width="40%">
+    </header>
+    <main>
+      <form>
+        <label for="name">Full Name</label>
+        <br><br>
+        <input type="text" id="name" name="name"
+          placeholder="Jane Doe" required>
+        <br><br>
+        <label for="dob">Date of Birth</label>
+        <br><br>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        <label for="email">Email</label>
+        <br><br>
+        <input type="email" id="email" name="email"
+          placeholder="example@domain.com" required>
+        <br><br>
+        <label for="password">Password</label>
+        <br><br>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label for="num-pets">Number of Pets</label>
+        <br><br>
+        <input type="number"  min="0" id="num-pets" name="num-pets" required>
+        <h4>Have you fostered before?</h4>
+        <label for="yes">
+          <input type="radio" id="yes" name="prev-experience" required>Yes</input>
+        </label>
+        <label for="no">
+        <input type="radio" id="no" name="prev-experience" required>No</input>
+        </label>
+        <h4>Which of these apply to your home?</h4>
+        <label for="apartment">Apartment</label>
+        <input type="checkbox" id="apartment" name="apartment" required>
+        <label for="children">Children</label>
+        <input type="checkbox" id="children" name="children" required>
+        <label for="yard">Yard</label>
+        <input type="checkbox" id="yard" name="yard" required>
+        <input type="submit" value="Sign Up!">
+      </form>
+    </main>  
+  </body>
+</html>
